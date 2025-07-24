@@ -8,7 +8,7 @@ const projects = [
     technologies: ['React', 'Springboot', 'MySQL'],
     // liveUrl: '#',
     githubUrl: 'https://github.com/Lakshitha321/Inventory-Management-System.git',
-    image: 'src/assets/Inventory.png',
+    image: '/Inventory.png',
   },
   {
     title: ' SkillVerse Educational Application',
@@ -16,7 +16,7 @@ const projects = [
     technologies: ['React', 'Springboot', 'Firebase','MongoDB','Rest'],
     // liveUrl: '#',
     githubUrl: 'https://github.com/maha-gedara/spring-api/tree/lakshitha ',
-    image: 'src/assets/skillverse.png'
+    image: '/skillverse.png'
   },
   {
     title: 'Mediz Hospital Management System',
@@ -26,7 +26,7 @@ const projects = [
     // liveUrl: '#',
     githubUrl: 'https://github.com/maha-gedara/web-app/tree/lakshitha',
      githubUrl: ' https://github.com/maha-gedara/api/tree/Lakshitha',
-    image: 'src/assets/Dashboard.png',
+    image: '/Dashboard.png',
   },
   {
     title: 'Book Management Application',
@@ -34,7 +34,7 @@ const projects = [
     technologies: ['TypeScript', 'Tailwindcss', 'Node.js','React'],
     // liveUrl: '#',
     githubUrl: 'https://github.com/Lakshitha321/Book-Store',
-    image: 'src/assets/book.png',
+    image: '/book.png',
   },
   {
     title: 'Genius Restuarent Management System',
@@ -42,7 +42,7 @@ const projects = [
     technologies: ['MongoDB', 'Express', 'Node.js','React','Bootstrap'],
     // liveUrl: '#',
     githubUrl: ' https://github.com/Novatech-Nexus/Genius-frontend/tree/feature/it22172082',
-    image: 'src/assets/staff details.png',
+    image: '/staff details.png',
   },
   
 ];

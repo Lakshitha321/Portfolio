@@ -35,7 +35,7 @@ const HeroSection = () => {
       {/* Right Image */}
       <div className="absolute right-0 top-0 h-full w-1/2 pointer-events-none select-none">
         <img
-          src="src\assets\web.png"
+          src="\web.png"
           alt="Profile Visual"
           className="object-cover h-full w-full opacity-80 grayscale mix-blend-screen"
         />
