@@ -7,10 +7,10 @@ const FloatingElements = () => {
     <div className="fixed inset-0 pointer-events-none overflow-hidden z-[-1]">
       {[...Array(SNOWFLAKE_COUNT)].map((_, i) => {
         const left = Math.random() * 100;
-        const size = 6 + Math.random() * 8; // px, for snowflake size
+        const size = 4 + Math.random() * 6; // Smaller on mobile
         const delay = Math.random() * 6;
         const duration = 8 + Math.random() * 8;
-        const opacity = 0.5 + Math.random() * 0.5;
+        const opacity = 0.3 + Math.random() * 0.4; // Slightly less opacity on mobile
 
         return (
           <div
@@ -19,8 +19,8 @@ const FloatingElements = () => {
             style={{
               left: `${left}%`,
               top: '-5%',
-              width: size,
-              height: size,
+              width: `${size}px`,
+              height: `${size}px`,
               opacity,
               animationDelay: `${delay}s`,
               animationDuration: `${duration}s`,

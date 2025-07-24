@@ -15,34 +15,36 @@ const HeroSection = () => {
   }, []);
 
   return (
-    <section className="min-h-screen bg-gradient-to-br from-[#0d0d14] to-[#111] text-white relative overflow-hidden px-10 py-20 flex items-center">
-      {/* Left Content */}
-      <div className="z-10 relative max-w-3xl">
-        <h1 className="text-4xl sm:text-5xl md:text-6xl font-bold leading-tight mb-6">
+    <section className="min-h-screen bg-gradient-to-br from-[#0d0d14] to-[#111] text-white relative overflow-hidden px-4 sm:px-6 lg:px-10 py-16 sm:py-20 flex items-center">
+      {/* Content */}
+      <div className="z-10 relative max-w-full lg:max-w-3xl">
+        <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold leading-tight mb-4 sm:mb-6">
           {typedText}
           <span className="blinking-cursor text-blue-500">|</span>
         </h1>
-        <p className="text-gray-400 max-w-xl mb-30 ">
-          I specialize in building full-stack web applications that are scalable, responsive, and user-friendly.
-          With experience across the MERN stack and modern development tools, I bridge the gap between elegant UI
-          and robust backend logic.
-        </p>
-        <p className="text-sm text-gray-500">
-          Passionate about solving real-world problems through clean code, innovation, and continuous learning.
-        </p>
+        <div className="space-y-4 sm:space-y-6">
+          <p className="text-gray-400 text-sm sm:text-base lg:text-lg max-w-full lg:max-w-xl">
+            I specialize in building full-stack web applications that are scalable, responsive, and user-friendly.
+            With experience across the MERN stack and modern development tools, I bridge the gap between elegant UI
+            and robust backend logic.
+          </p>
+          <p className="text-xs sm:text-sm text-gray-500">
+            Passionate about solving real-world problems through clean code, innovation, and continuous learning.
+          </p>
+        </div>
       </div>
 
-      {/* Right Image */}
-      <div className="absolute right-0 top-0 h-full w-1/2 pointer-events-none select-none">
+      {/* Background Image - Full screen on mobile, right side on desktop */}
+      <div className="absolute top-0 left-0 w-full h-full lg:left-auto lg:right-0 lg:w-1/2 pointer-events-none select-none">
         <img
-          src="\web.png"
+          src="/web.png"
           alt="Profile Visual"
-          className="object-cover h-full w-full opacity-80 grayscale mix-blend-screen"
+          className="object-cover h-full w-full opacity-30 lg:opacity-80 grayscale mix-blend-screen"
         />
       </div>
 
-      {/* Background Overlay */}
-      <div className="absolute inset-0 bg-gradient-to-br from-indigo-900/40 via-slate-800/30 to-black/70 z-0" />
+      {/* Background Overlay - Stronger on mobile for text readability */}
+      <div className="absolute inset-0 bg-gradient-to-br from-indigo-900/60 via-slate-800/50 to-black/80 lg:from-indigo-900/40 lg:via-slate-800/30 lg:to-black/70 z-0" />
 
       {/* Cursor Animation */}
       <style>{`
